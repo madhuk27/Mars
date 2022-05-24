@@ -1,0 +1,15 @@
+#para1{
+    color:#ffffff83;
+    background-color: rgb(4,0,0);
+    text-align:center;
+    /* text-decoration: None;
+    text-indent: 2px;
+    text-shadow: 2px, 2px; */ 
+}
+#justify{
+    text-align: justify;
+    margin:8px;
+}
+#rt1{
+    text-align:right;
+}
