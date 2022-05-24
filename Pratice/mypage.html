@@ -4,12 +4,51 @@
         <style>
             a{
                 text-decoration: None;
-                color: burlywood
+                color:blue ;
             }
             h1{
                 text-transform:uppercase;
-                text-shadow: 2px 2px 10px red;
-                
+                text-shadow: 2px 2px 10px red;   
+            }
+            .boldfont{
+                font-weight:bold ;
+            }
+            .greybackground{
+                background-color: grey;
+            }
+            p.greybackground{
+                text-transform:uppercase;
+            }
+            tr{
+                background-color: aqua;
+            }
+            div p{
+                text-decoration: underline;
+            }
+            div > p{
+                text-shadow:2px 2px 10px red;
+            }
+            div + p{
+                text-transform: capitalize;
+                        }
+            p ~ ul{
+                text-transform:uppercase;
+            }
+            #helveticafont{
+                font-family:lucida sans,sans-serif, arial;
+                font-style: oblique;
+                font-variant:small-caps;
+                font-size:20px;
+            }
+            #sectionA{
+                /* font-family: 'Courier New', Courier, monospace; */
+                font-style: oblique;
+                font-weight: 200%;
+                font-size: 1em;
+
+            }
+            body{
+                font-size: 10px;
             }
          </style>
     </head>
@@ -27,9 +66,17 @@
         <b><u><i>bold</i></u></b>
         <pre>   i am in
         </pre>
+        <div>
+            <p>paragraph1</p>
+            <h1>Part of testing</h1>
+            <span>
+                <p>Child</p>
+            </span>
+        </div>
         <p>paragraph</p>
-        <p>let's meet in <abbr title="United States of America"> USA </abbr> again </p>
-        <p>chemical formula H<sub>2</sub>0</p>
+        <p class= "boldfont"> let's meet in <abbr title="United States of America"> USA </abbr> again </p>
+        <p class= "greybackground">chemical formula H<sub>2</sub>0</p>
+        <h3 class="greybackground"> Header for class sector</h3>
         <table border="8">
             <caption>Employee Details</caption>
             <tr>
@@ -107,9 +154,11 @@
             Our shuttle van service, to or from Milwaukee Mitchell or Chicago Hare, is the most economical door-to-door option for airport transportation. Figuring out your transportation arrangements in advance will make it easier for you to sit back and really enjoy your trip.
             Customer-supplied car seats are required for passengers under 8 years of age and must be customer-installed into our vehicles.
         </p>
-        <img src="./bg.jpg/pic.jpg" height="100" width="150", alt="Image">
+        <img src="./Images/pic.jpg" height="100" width="150", alt="Images">
         <audio src="sss.mpeg"></audio>
-
+        <p id="helveticafont">
+            font-family
+        </p>
         <br> <br> <br> <br>
         <footer>
             copywright 2022
