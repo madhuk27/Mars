@@ -22,3 +22,5 @@ function checkGuess() {
     }
     attemptCount++;
 }
+
+

@@ -1,12 +1,12 @@
-// random value 
+// randomnumber
 var randomnumber = Math.floor(Math.random() * 10 + 1);
 
-// counting the number of guesses are made for correct Guess
+// number of guesses
 var guess = 1;
 
 document.getElementById("submit").onclick = function(){
-
-// number guessed by user	
+    
+// guessnumber	
 var guessnumber = document.getElementById("guess").value;
 
 if(guessnumber == randomnumber)
