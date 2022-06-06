@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+  font: 1em sans-serif;
+  padding: 0;
+  margin : 0 auto;
+}
+</style>
+<body>
+    <h1>Details</h1>
+    <form action="script.js" method="post">
+    <fieldset>
+    <label for="Name"> Name: </label>
+    <input type="text" id="Name" name="Name" placeholder="Enter Name">
+    <span class="error" aria-live="polite"></span><br><br>
+
+    <label for="Employee"> Employee Id: </label>
+    <input type="text" id="Employee" name="user" placeholder="Enter Id"><br><br>
+
+    <label for="Joining Date"> Joining Date: </label>
+    <input type="Date" id="Joining Date" name="Joining Date"><br><br>
+
+
+    <label for="Hours worked"> Hours worked: </label>
+    <input type="number" id="Hours worked" name="Hours worked" placeholder="Hours worked"><br><br>
+
+    <label for="Employee"> Employee Id: </label>
+    <input type="text" id="Employee" name="user" placeholder="Enter Id"><br><br>
+    <input type="submit" value="submit" onclick="getUser()">
+    </fieldset>
+    </form>
+    <br>
+    <div>
+        <script src="script.js"></script>  
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<p>Random integer between 1 and 10.</p>
+<button onclick="document.getElementById('demo').innerHTML = getRndInteger(1,10)">Try It</button>
+<p id="demo"></p>
+<script>
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+</script>
