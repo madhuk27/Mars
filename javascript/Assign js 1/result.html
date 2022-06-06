@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h4><span id="Name"></span> who is a <span id="Designation"></span> will get $<span id="Pay"></span></h4>
+    <script>
+        var Name=window.localStorage.getItem('username');
+        document.getElementById("username").innerHTML=Name;
+        var Pays = window.localStorage.getItem('Pay');
+        document.getElementById("Pay").innerHTML=Pays;
+        var Des=window.localStorage.getItem('Designation');
+        document.getElementById("Designation").innerHTML=Des;
+    </script>
+</body>
+</html>
+
+
+<!-- John who is a ‘Manager’ will get $9000  -->
+<!-- document.querySelector.innerHTMl= userName + "who is a " + Designation + " will get $ " + Pay  -->
+
+
+ 
