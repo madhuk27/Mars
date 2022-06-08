@@ -1,5 +1,7 @@
 // randomnumber
-var randomnumber = Math.floor(Math.random() * 10 + 1);
+alert("1")
+var randomnumber = parseInt(Math.random() * 10);
+alert(randomnumber)
 
 // number of guesses
 var guess = 1;

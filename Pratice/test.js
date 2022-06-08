@@ -1,26 +1,19 @@
-let randomNumber = Math.floor(Math.random() * 10) + 1
-
-let result = document.querySelector(".result")
-let attempt = document.querySelector(".attempt")
-let button = document.getElementById("button")
-let guess = document.getElementById("guess")
-
-
-button.addEventListener("click", checkGuess)
-
-let attemptCount = 1 // Renamed this from attempt and moved to global scope
-
-function checkGuess() {
-    let guessValue = document.getElementById("guess").value
-    attempt.innerHTML = "Attempt n: " + attemptCount
-    if (guessValue < randomNumber) {
-        result.innerHTML = "Your guess is too low";
-    } else if (guessValue > randomNumber) {
-        result.innerHTML = "Your guess is too high";
-    } else {
-        result.innerHTML = "You guessed correctly";
-    }
-    attemptCount++;
-}
-
-
+function SalesTotals(sales){
+    let newSales = sales.map(sale=>{
+        let {original, stock, discount=0.0} = sale;
+        sale['sale'] = original - original * discount;
+        sale['total'] = sale.sale*sale.stock;
+        return sale;
+    });
+    return newSales;
+  }
+   
+  const sales = [ 
+    { item: 'PS4 Pro', stock: 3, original: 399.99 }, 
+    { item: 'Xbox One X', stock: 1, original: 499.99, discount: 0.1 }, 
+    { item: 'Nintendo Switch', stock: 4, original: 299.99 }, 
+    { item: 'PS2 Console', stock: 1, original: 299.99, discount: 0.8 }, 
+    { item: 'Nintendo 64', stock: 2, original: 199.99, discount: 0.65 } 
+    ]; 
+  let newSales = SalesTotals(sales);
+  console.log(newSales);

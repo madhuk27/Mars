@@ -136,4 +136,76 @@
 // function getavg()
 
 
-let myfunc
+// let myfunc
+
+
+// // 7 june
+// let firstName='demo'
+// let person= {
+//     firstName: "Siva",
+//     lastName: "Madhu",
+//     age:25,
+//     department:"Sales",
+//     greet(){
+//         // console.log('Hello '+this.firstName)
+//     }
+// }
+
+// function Student(firstName, lastName, age){
+//     this.firstName=firstName;
+//     this.lastName=lastName;
+//     this.age=age;
+// }
+// let Stud1 = new Student("k","m", 23);
+// let Stud2 = new Student("t","h", 13);
+// let Stud3 = new Student("l","s", 19);
+
+// console.log(Stud2.lastName)
+
+// console.log(person.firstName + "" + person["lastName"] , person.age)
+
+// for(const key in person){
+//     console.log(key+ ":"+person[key])
+// }
+
+// person.greet()
+// let employee = {
+//     empId : "121",
+//     address : "Wisconsin",
+// }
+// employee._proto_ = person;
+// console.log(employee.lastName)
+// console.log(person)
+
+// let student={
+//     name:"John",
+//     class:"10",
+//     grade:"A"
+// }
+// student.rollNo = "5"
+
+// for(const key in student){
+//     console.log(key+":"+student[key])
+// }
+
+
+// let a ={
+//     eat:"t",
+// };
+// let r = {
+//     jump: "t",
+//     __proto__:a
+// };
+// for(let prop in r){
+//     console.log(prop)
+// }
+// let name="m";
+// console.log(`hello ${1}`);
+// console.log(`hello ${"name"}`);
+// console.log(`hello ${name}`);
+// console.log(name +12);
+// console.log(name +12+3);
+// console.log(name +(12+3));
+// console.log(12+3 + name);
+
+
