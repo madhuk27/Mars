@@ -208,4 +208,46 @@
 // console.log(name +(12+3));
 // console.log(12+3 + name);
 
+// class User{
+//  name;
+//  constructor(name){
+//         this.name=name;
+//  }
+//  getName(){
+//      return this.name
+//  }
+//  namecContains(str){
+//      return this.getName().includes(str);
+//  }
+// }
+// const User = new User('jon');
+// User.isName Taken('jon');
+// User.isName Taken('snow')
 
+
+class User{
+    #userName
+    constructor(name){
+        this.#userName= name;
+    }
+    get name(){
+        console.log("Getting the name...")
+        return this.#userName;
+    }
+    set name(name){
+        console.log("setting the name...")
+        if(name === " "){
+            throw new error("field cannot be empty")
+        }
+        this.userName = name
+    }
+}
+const user = new User("Dave")
+const user1 = new User("")
+
+user.name='smith'
+user1.name=''
+
+// user.get()
+console.log(user.name)
+console.log(user1.name)
