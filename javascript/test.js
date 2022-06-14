@@ -221,3 +221,33 @@ myFunction1();
 
 // })
 // const g= ()
+function getUsers(callback){ 
+  setTimeout(()=>{ 
+  callback( [ 
+    {userName: 'john', email:'abc@com.com'}, 
+    {userName: 'Kevin', email:'kbc@com.com'} 
+    ]) 
+    }, 1000) 
+    } 
+    function findUser(userName, callback){ 
+    getUsers((users) => { 
+    const user = users.find((user) => user.userName === userName); 
+    callback(user); 
+    }); } 
+    findUser('Kevin', console.log) 
+
+
+
+
+const getUsers = () =>{
+  return new Promise((resolve, reject) => {})
+}
+    const readFilePromise = () => {
+      return new Promise((resolve, reject) => {
+        fs.readFile(filePath, options, (err, data) => {
+          if (err) return reject(err)
+          resolve(data)
+        })
+      })
+    }
+    
