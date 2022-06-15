@@ -14,26 +14,26 @@ function getUsers(callback){
       findUser('Kevin', console.log) 
 
 
-      function getUser(onSuccess) {
-        return new Promise((resolve, reject) => {
-          setTimeout(() => {
-            // Handle resolve and reject in the asynchronous API
-            if (onSuccess) {
-              resolve(
-                {userName: 'Kevin', email:'kbc@com.com'}, 
-                )
-            } else {
-              reject('Failed to fetch data!')
-            }
-          }, 1000)
-        })
+function getUser(onSuccess) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Handle resolve and reject in the asynchronous API
+      if (onSuccess) {
+        resolve(
+          {userName: 'Kevin', email:'kbc@com.com'}, 
+          )
+      } else {
+        reject('Failed to fetch data!')
       }
-     
-    // Run the getUsers function with the true flag to resolve successfully
-    getUser(true)
-      .then((response) => {
-        console.log(response)
-      })
-      .catch((error) => {
-        console.error(error)
-      })
+    }, 1000)
+  })
+}
+  
+// Run the getUsers function with the true flag to resolve successfully
+getUser(true)
+  .then((response) => {
+    console.log(response)
+  })
+  .catch((error) => {
+    console.error(error)
+  })

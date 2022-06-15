@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getdata()">click to load data</button>
+    <script>
+        function getdata(){
+            $.ajax({
+                url: "https://gorest.co.in/public/v2/users",
+                dataType : "Json",
+                type: "GET",
+                data: {
+                    key: "value",
+                },
+                success: (data)=> {
+                    const myUsers = [
+                    console.log('companies',data)]
+                    // const users = data.map(companies => {
+                    //     const container = {};
+                    //     container[data.name] = companies.name;
+                    //     container[data.id] = companies.id
+                    //     return container                        
+                    // })
+                    // console.log(users)
+
+                    const user = data.map(companies => {
+                        const container = {};
+                        container.id = companies.id
+                        container.name = companies.name;
+                        return container                        
+                    })
+                    console.log('Name and Id', user)
+                },
+                error: (err) => {
+                    console.log(err)
+                }
+            })
+        }
+
+    </script>
+</body>
+</html>
+
