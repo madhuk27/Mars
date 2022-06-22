@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import Form from "./component/Form"
+import Form from "./component/Assignment/Form"
 // import Form2 from "./component/Form2"
 
 // function App() {
@@ -37,4 +37,3 @@ function App() {
 }
 
 export default App;
-
